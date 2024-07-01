@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e6fae;
+  
+}
+
+.navDiv {
+  position: relative;
+  justify-content: space-between;
+  padding: 18px 80px;
+  background-color: #1e6fae;
+}
+.navItem {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 100%;
+  
+  display: block;
+}
+
+
+.navDiv:hover {
+  background-color: #045ca0;
+  transition: background-color 0.2s;
+}
+
+
