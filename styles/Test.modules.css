@@ -1,0 +1,25 @@
+/* styles/Test.module.css */
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .bannerImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .mainContent {
+    flex: auto;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
