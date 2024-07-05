@@ -1,0 +1,25 @@
+/* styles/novedades.module.css */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gridItem {
+    background: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gridItem h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .gridItem div {
+    color: #333;
+  }
+  

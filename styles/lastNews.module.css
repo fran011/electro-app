@@ -1,27 +1,58 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura de la página */
+  justify-content: space-between; /* Asegura que el contenido se distribuya uniformemente */
+}
+
 .gridContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px; /* Espacio entre los contenedores */
-    padding: 20px;
-  }
-  
-  .gridItem {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .gridItem h3 {
-    margin: 0 0 10px 0;
-  }
-  
-  .gridItem p {
-    margin: 0;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px; /* Espacio entre los contenedores */
+  padding: 20px;
+  margin-bottom: auto;
+}
+
+.gridItem {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gridItem h3 {
+  margin: 0 0 10px 0;
+}
+
+.gridItem p {
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.viewMoreButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.viewMoreButton:hover {
+  background-color: #005bb5;
+}
