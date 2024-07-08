@@ -13,12 +13,18 @@
   gap: 20px; /* Espacio entre los contenedores */
   padding: 20px;
   margin-bottom: auto;
+  max-width: 900px;
+}
+
+.gridItem:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s;
 }
 
 .gridItem {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc71;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -34,6 +40,9 @@
 .gridItem p {
   margin: 0;
 }
+
+ 
+
 
 .buttonContainer {
   display: flex;

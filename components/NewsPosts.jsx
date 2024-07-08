@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const NewsPosts = ({ setNewsItems }) => {
   useEffect(() => {
-    fetch('https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts')
+    fetch('https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=14')
       .then(response => response.json())
       .then(data => {
         const formattedNews = data
