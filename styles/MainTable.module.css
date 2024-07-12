@@ -1,0 +1,54 @@
+/* MainTable.module.css */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header {
+    display: flex;
+}
+
+.headerCell {
+    flex: 1;
+    background-color: #1e6fae;
+    color: white;
+    text-align: center;
+    border: 0.2px solid;
+    border-color: rgba(0, 0, 0, 0.097);
+    padding: 8px;
+}
+
+.body {
+    display: flex;
+    width: 100%;
+    align-items: stretch; 
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #ddd;
+}
+
+.cell, .emptyCell {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Asegura que las celdas se expandan para ocupar el espacio disponible */
+}
+
+.cell:hover {
+    background-color: #1e70ae8b; /* Cambia el color de fondo en hover */
+}
+
+.emptyCell:hover {
+    background-color: inherit; /* No cambia el color de fondo en hover */
+}
+
+.emptyCell {
+    background-color: transparent; /* Asegura que las celdas vacías no tengan fondo */
+}

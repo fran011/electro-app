@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e6fae;
-  
+  background-color: #1e6fae; 
 }
+
 
 .navDiv {
   position: relative;
