@@ -5,6 +5,8 @@ import headerStyle from "../styles/Header.module.css"
 import Footer from "../components/Footer";
 import Slider from "../components/SlideShow";
 import MainTable from "../components/mainTable";
+import SeccionCarreras from "../components/SeccionCarreras";
+import SeccionClubes from "../components/SeccionClubes";
 //import styles from "../styles/Home.module.css";
 
 export default function Test() {
@@ -20,6 +22,7 @@ export default function Test() {
         <Slider/>
         <MainTable/>
         <LastNews />
+        <SeccionCarreras/>
       </main>
 
       <Footer/>

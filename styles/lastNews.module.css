@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh; /* Ajusta la altura de la página */
+  /*height: 100vh;  Ajusta la altura de la página */
   justify-content: space-between; /* Asegura que el contenido se distribuya uniformemente */
+}
+
+.pageContainer h2 {
+  margin-bottom: 0;
 }
 
 .gridContainer {
@@ -40,6 +44,8 @@
 .gridItem p {
   margin: 0;
 }
+
+
 
  
 

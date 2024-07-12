@@ -21,6 +21,7 @@ const LastNews = () => {
 
   return (
     <div className={styles.pageContainer}>
+      <h2 >Novedades</h2>
       <div className={styles.gridContainer}>
         <NewsPosts setNewsItems={setNewsItems} />
         {newsItems.slice(0, 4).map((item) => (
