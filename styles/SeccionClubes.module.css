@@ -1,0 +1,102 @@
+.sliderWrapper {
+  text-align: center;
+}
+
+.mainTitle {
+  margin-bottom: 0px;
+}
+
+.sliderContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.sliderContainer :hover{
+  transform: scale(1.02);
+  transition: transform 0.5s;
+
+}
+
+.sliderSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.sliderItem {
+  width: 100%;
+  height: 150px;
+  background: url('https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/fondo-postgrado.jpg') no-repeat center center;
+  background-size: cover;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundCategory63 {
+  background: url('https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/fondo-postgrado.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.backgroundCategory66 {
+  background: url('https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/fondo-devops.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.backgroundCategory67 {
+  background: url('https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/fondo-robotica1.png') no-repeat center center;
+  background-size: cover;
+}
+
+.title {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 90%;
+  text-align: center;
+  animation: slide 15s infinite;
+  white-space: normal;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
