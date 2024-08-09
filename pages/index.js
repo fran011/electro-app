@@ -9,7 +9,7 @@ import SeccionCarreras from "../components/SeccionCarreras";
 import SeccionClubes from "../components/SeccionClubes";
 //import styles from "../styles/Home.module.css";
 
-export default function Test() {
+export default function Index() {
   return (
     <div>
       <Head>

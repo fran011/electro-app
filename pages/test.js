@@ -23,6 +23,8 @@ export default function Test() {
         <MainTable/>
         <LastNews />
         <SeccionCarreras/>
+        <SeccionClubes/>
+
       </main>
 
       <Footer/>

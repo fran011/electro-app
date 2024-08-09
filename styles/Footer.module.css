@@ -61,3 +61,22 @@
   color: #fff;
   text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+
+  .footer{
+    padding: auto;
+    width: 100%;
+  }
+
+  .footerImageBigger{
+    max-width: 120px;
+  }
+
+  .footerImage {
+    max-width: 80px; 
+    margin-bottom: 10px; 
+  }
+
+}

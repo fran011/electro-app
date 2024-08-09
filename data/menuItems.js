@@ -54,3 +54,13 @@ export const institucinalItems = [
     { label: 'Formación Complementaria', url:'#'},
     { label: 'Oferta Laboral', url:'#'},
   ]
+
+  export const barcalaItems = [
+    { label: 'Laboratorio Barcala', url: '#'},
+    { label: 'Horarios', url:'#'},
+  ]
+
+  export const clubesItems = [
+    { label: 'Club DevOps', url: '#'},
+    { label: 'Club de Robotica', url:'#'},
+  ]

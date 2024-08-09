@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 import Dropdown from './Dropdown';
-import { carrerasItems, institucinalItems, investigacionItems, noticiasItems } from '../data/menuItems';
+import { carrerasItems, institucinalItems, investigacionItems, noticiasItems, barcalaItems, clubesItems } from '../data/menuItems';
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -44,11 +44,19 @@ const Navbar = () => {
         <a href="/" className={styles.navItem}>Noticias</a>
         {activeDropdown === 'noticias' && <Dropdown items={noticiasItems} />}
       </div>
-      <div className={styles.navDiv}>
+      <div className={styles.navDiv}
+           onMouseEnter={() => handleMouseEnter('barcala')}
+           onMouseLeave={handleMouseLeave}
+      >
         <a href="/" className={styles.navItem}>Barcala</a>
+        {activeDropdown === 'barcala' && <Dropdown items={barcalaItems} />}
       </div>
-      <div className={styles.navDiv}>
+      <div className={styles.navDiv}
+        onMouseEnter={() => handleMouseEnter('clubes')}
+        onMouseLeave={handleMouseLeave}
+      >
         <a href="/" className={styles.navItem}>Clubes</a>
+        {activeDropdown === 'clubes' && <Dropdown items={clubesItems} />}
       </div>
     </nav>
   );

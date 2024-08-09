@@ -71,3 +71,8 @@
 .viewMoreButton:hover {
   background-color: #005bb5;
 }
+
+@media (max-width: 768px) {
+
+
+}
