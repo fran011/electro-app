@@ -10,7 +10,7 @@
 .navDiv {
   position: relative;
   justify-content: space-between;
-  padding: 10px 20px; 
+  padding: 10px 60px; 
   background-color: #1e6fae;
 }
 
@@ -43,6 +43,8 @@
   .navItem {
     padding: 10px 0; 
   }
+
+
 
   .dropdownContent {
     position: relative; /* Ajusta el dropdown */

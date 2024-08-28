@@ -22,8 +22,8 @@ export const institucinalItems = [
     },
     { label: 'Calendario Académico', url: '#',
       subItems: [
-        { label: 'Facultad de Ingeniería', url: '#'},
-        { label: 'Facultad Virtual de Informática E Ingeniería', url: '#'}
+        { label: 'Facultad de Ingeniería', url: 'https://ing.unlp.edu.ar/institucional/calendario-ano-lectivo-completo/', targ: "_blank"},
+        { label: 'Facultad Virtual de Informática E Ingeniería', url: 'https://ic.info.unlp.edu.ar/wp-content/uploads/2024/02/IC_CALENDARIO_ACADEMICO_2024.pdf', targ: "_blank"}
       ]
     },
     {label: 'Área Técnica', url: '#'}
@@ -43,14 +43,14 @@ export const institucinalItems = [
   ];
 
   export const investigacionItems = [
-    { label: 'Unidades de Investigacón', url:'#' },
+    { label: 'Unidades de Investigacón', url:'/unidadesInv' },
     { label: 'Investigadores', url:'#' },
     { label: 'Repositorio Digital de Trabajos', url:'#' }
   ];
   
   export const noticiasItems = [
-    { label: 'Novedades', url: '#'},
-    { label: 'Concursos', url:'#'},
+    { label: 'Novedades', url: '/novedades'},
+    { label: 'Concursos', url:'/concursos'},
     { label: 'Formación Complementaria', url:'#'},
     { label: 'Oferta Laboral', url:'#'},
   ]

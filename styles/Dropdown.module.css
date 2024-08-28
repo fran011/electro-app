@@ -1,13 +1,12 @@
 .dropdownContent {
-  display: block;
   position: absolute;
   background-color: #1e70aee7;
   min-width: 200px;
   box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.4);
   z-index: 1;
   width: 100%;
-  top: 100%; /* Para asegurar que el dropdown esté justo debajo del item del navbar */
-  left: 0;   /* Para que el dropdown esté alineado a la izquierda con respecto al item del navbar */
+  top: 100%; /* Asegura que el dropdown esté justo debajo del item del navbar */
+  left: 0;   /* Alinea el dropdown a la izquierda con respecto al item del navbar */
 }
 
 .dropdownItem {
@@ -25,7 +24,6 @@
 
 .dropdownItem a:hover {
   background-color: #045ca0;
-
 }
 
 .dropdownItem .dropdownContent {
