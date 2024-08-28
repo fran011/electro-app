@@ -23,7 +23,7 @@ const LastNews = () => {
     <div className={styles.pageContainer}>
       <h2 >Novedades</h2>
       <div className={styles.gridContainer}>
-        <NewsPosts setNewsItems={setNewsItems} />
+        <NewsPosts setNewsItems={setNewsItems} url={'https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=14'} />
         {newsItems.slice(0, 4).map((item) => (
           <div key={item.id} className={styles.gridItem}>
             <h3 

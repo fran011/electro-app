@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Head from "next/head";
 import Navbar from "../components/NavBar";
-import NewsPosts from "../components/NewsPosts"; // Import the reusable NewsPosts component
-import styles from "../styles/novedades.module.css"; // Import your styles
+import NewsPosts from "../components/NewsPosts"; 
+import styles from "../styles/novedades.module.css"; 
 
 const Novedades = () => {
   const [newsItems, setNewsItems] = useState([]);
@@ -11,11 +11,11 @@ const Novedades = () => {
     <div>
       <Head>
         <title>Novedades - Departamento de Electrotecnia</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cropped-logo-tp.png" />
       </Head>
       <Navbar />
       <main className={styles.gridContainer}>
-        <NewsPosts setNewsItems={setNewsItems} /> {/* Use NewsPosts to fetch and set news items */}
+        <NewsPosts setNewsItems={setNewsItems} url={'https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=14'} /> {/* Use NewsPosts to fetch and set news items */}
         {newsItems.map((item) => (
           <div key={item.id} className={styles.gridItem}>
             <h3 dangerouslySetInnerHTML={{ __html: item.title }}></h3>

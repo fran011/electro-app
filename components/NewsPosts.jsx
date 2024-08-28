@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 
-const NewsPosts = ({ setNewsItems }) => {
+const NewsPosts = ({ setNewsItems, url }) => {
   useEffect(() => {
-    fetch('https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=14')
+    fetch(url)
       .then(response => response.json())
       .then(data => {
         const formattedNews = data
@@ -18,7 +18,7 @@ const NewsPosts = ({ setNewsItems }) => {
         setNewsItems(formattedNews);
       })
       .catch(error => console.error('Error fetching news:', error));
-  }, [setNewsItems]);
+  }, [url, setNewsItems]);
 
   return null;
 };
