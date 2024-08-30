@@ -30,7 +30,7 @@ export const institucinalItems = [
   ]
 
   export   const carrerasItems = [
-    { label: 'Postgrado'},
+    { label: 'Postgrado', url:'#'},
     { label: 'Grado', 
       subItems: [
         { label: 'Ingenieria en Computacion', url:'#'},
