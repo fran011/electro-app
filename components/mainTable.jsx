@@ -4,12 +4,12 @@ import styles from '../styles/MainTable.module.css'; // Importa los estilos
 
 const MainTable = () => {
     const tableData = [
-        { column2: 'IITREE' },
-        { column2: 'LEICI' },
-        { column2: 'LEME' },
-        { column2: 'SENYT' },
-        { column2: 'GRIDCOMD' },
-        { column2: 'UNITEC' },
+        { column2: 'IITREE', url: 'https://www.iitree-unlp.org.ar/' },
+        { column2: 'LEICI', url: 'https://leici.ing.unlp.edu.ar/'},
+        { column2: 'LEME', url: 'https://leme.ing.unlp.edu.ar/' },
+        { column2: 'SENYT', url: 'https://senyt.ing.unlp.edu.ar/' },
+        { column2: 'GRIDCOMD', url: 'https://gridcomd.ing.unlp.edu.ar/' },
+        { column2: 'UNITEC', url: 'https://labs.ing.unlp.edu.ar/electrotecnia/unitec/' },
         // Agrega más filas según sea necesario
     ];
 
@@ -37,7 +37,10 @@ const MainTable = () => {
                 <div className={styles.column}>
                     {tableData.map((row, index) => (
                         <div key={index} className={row.column2 ? styles.cell : styles.emptyCell}>
-                            {row.column2}
+                            <a href={row.url} target="_blank" rel="noopener noreferrer">
+                                {row.column2}
+
+                            </a>
                         </div>
                     ))}
                 </div>

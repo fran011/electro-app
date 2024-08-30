@@ -19,13 +19,17 @@ const LastNews = () => {
     router.push('/novedades');
   };
 
+  const handleClick = (id) => {
+    router.push(`/novedades/${id}`);
+  };
+
   return (
     <div className={styles.pageContainer}>
       <h2 >Novedades</h2>
       <div className={styles.gridContainer}>
         <NewsPosts setNewsItems={setNewsItems} url={'https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=14'} />
         {newsItems.slice(0, 4).map((item) => (
-          <div key={item.id} className={styles.gridItem}>
+          <div key={item.id} className={styles.gridItem} onClick={() => handleClick(item.id)}>
             <h3 
               dangerouslySetInnerHTML={{ __html: item.title }}
               onClick={() => toggleExpand(item.id)}
