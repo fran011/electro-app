@@ -1,5 +1,6 @@
 // MainTable.js
 import React from 'react';
+import Link from 'next/link';
 import styles from '../styles/MainTable.module.css'; // Importa los estilos
 
 const MainTable = () => {
@@ -14,11 +15,11 @@ const MainTable = () => {
     ];
 
     const tableData2 = [
-        { column1: 'Ingenieria en Computación'},
-        { column1: 'Ingenieria en Telecomunaciones'},
-        { column1: 'Ingenieria en Energía Eléctrica'},
-        { column1: 'Ingenieria en Electrónica'},
-    ]
+        { column1: 'Ingeniería en Computación', link: '/ing_computacion' },
+        { column1: 'Ingeniería en Telecomunicaciones', link: '/ing_telecomunicaciones' },
+        { column1: 'Ingeniería en Energía Eléctrica', link: '/ing_energiaelectrica' },
+        { column1: 'Ingeniería en Electrónica', link: '/ing_electronica' },
+    ];
 
     return (
         <div className={styles.table}>
@@ -29,17 +30,18 @@ const MainTable = () => {
             <div className={styles.body}>
                 <div className={styles.column}>
                     {tableData2.map((row, index) => (
-                        <div key={index} className={row.column1 ? styles.cell : styles.emptyCell}>
-                            {row.column1}
+                        <div key={index} className={styles.cell}>
+                            <Link href={row.link} passHref>
+                                <div className={styles.link}>{row.column1}</div>
+                            </Link>
                         </div>
                     ))}
                 </div>
                 <div className={styles.column}>
                     {tableData.map((row, index) => (
-                        <div key={index} className={row.column2 ? styles.cell : styles.emptyCell}>
+                        <div key={index} className={styles.cell}>
                             <a href={row.url} target="_blank" rel="noopener noreferrer">
                                 {row.column2}
-
                             </a>
                         </div>
                     ))}
@@ -50,3 +52,4 @@ const MainTable = () => {
 };
 
 export default MainTable;
+
