@@ -1,0 +1,33 @@
+.button {
+    width: 1200px; /* Define el ancho fijo para el botón */
+    background-color: #1e70aec2; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px;
+    border: none; /* Sin borde */
+    text-align: left; /* Alineación del texto a la izquierda */
+    outline: none; /* Sin borde al hacer clic */
+    font-size: 16px; /* Tamaño de la fuente */
+  }
+  
+  .button:focus {
+    outline: none; /* Sin borde al enfocarse */
+  }
+  
+  .button:hover {
+    background-color: #1e70ae71; /* Cambio de color al pasar el ratón */
+  }
+
+  @media (max-width: 768px) {
+    .button {
+        width: 300px; /* Define el ancho fijo para el botón */
+        background-color: #1e70aec2; /* Color de fondo del botón */
+        color: white; /* Color del texto */
+        padding: 10px; /* Espaciado interno */
+        margin: 5px;
+        border: none; /* Sin borde */
+        text-align: left; /* Alineación del texto a la izquierda */
+        outline: none; /* Sin borde al hacer clic */
+        font-size: 16px; /* Tamaño de la fuente */
+      }
+}    

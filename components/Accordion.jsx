@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import style from '../styles/Accordion.module.css';
 
 const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar si está abierto o cerrado
@@ -9,11 +10,11 @@ const Accordion = ({ title, children }) => {
 
   return (
     <div>
-      <button onClick={toggleAccordion} style={{ cursor: 'pointer' }}>
+      <button className={style.button} onClick={toggleAccordion} style={{ cursor: 'pointer' }}>
         {title} {isOpen ? '▲' : '▼'}
       </button>
       {isOpen && (
-        <div style={{ marginTop: '10px' }}>
+        <div className={style.accordionContent}>
           {children}
         </div>
       )}

@@ -22,14 +22,16 @@ export default function IngenieriaEnergiaElectrica() {
       <Navbar />
 
       <main className={carrerasStyle.mainContent}>
-        <h1 className={carrerasStyle.title}>Ingeniería en Energía Eléctrica</h1>
+        <div className={carrerasStyle.divContainer}> 
+          <h1 className={carrerasStyle.title}>Ingeniería en Energía Eléctrica</h1>
+        </div>
         
         <p className={carrerasStyle.paragraph}>
-        Encontrá acá información sobre la carrera, alcances del título, plan de estudios y las optativas.
+          Encontrá acá información sobre la carrera, alcances del título, plan de estudios y las optativas.
         </p>
 
         <Accordion title="Descripción">
-          <p>
+          <p className={carrerasStyle.paragraph}>
                 La energía eléctrica debe ser producida, transmitida y distribuida para que finalmente los usuarios puedan utilizarla según sus necesidades. <br /><br />
 
                 Podemos agrupar estas necesidades en categorías como domiciliaria, industrial y comercial.<br /><br />
@@ -45,7 +47,7 @@ export default function IngenieriaEnergiaElectrica() {
         </Accordion>
 
         <Accordion title="Alcance del título">
-        <p>
+        <p className={carrerasStyle.paragraph}>
                 Estudio, factibilidad, proyecto, planificación, dirección, construcción, instalación, puesta en marcha, operación, ensayos, mediciones, mantenimiento, reparación, modificación, transformación e inspección de: <br /><br />
 
                 1. Sistemas de generación, transmisión, distribución, conversión, control, automatización, recepción, procesamiento y utilización de energía eléctrica en todas las frecuencias y potencias, excepto obras civiles e industriales. <br /><br />

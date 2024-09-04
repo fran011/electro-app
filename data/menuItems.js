@@ -31,12 +31,12 @@ export const institucinalItems = [
 
   export   const carrerasItems = [
     { label: 'Postgrado', url:'#'},
-    { label: 'Grado', 
+    { label: 'Grado', url: '#', 
       subItems: [
-        { label: 'Ingenieria en Computacion', url:'#'},
-        { label: 'Ingenieria en Electronica', url:'#' },
-        { label: 'Ingenieria en Telecomunicaciones', url:'#' },
-        { label: 'Ingenieria en Energia Electrica', url:'#' }
+        { label: 'Ingenieria en Computacion', url:'/ing_computacion'},
+        { label: 'Ingenieria en Electronica', url:'/ing_electronica' },
+        { label: 'Ingenieria en Telecomunicaciones', url:'/ing_telecomunicaciones' },
+        { label: 'Ingenieria en Energia Electrica', url:'/ing_energiaelectrica' }
       ]
     }
     

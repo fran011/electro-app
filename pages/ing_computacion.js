@@ -23,20 +23,21 @@ export default function IngenieriaComputacion() {
       <Navbar />
 
       <main className={carrerasStyle.mainContent}>
-        <h1 className={carrerasStyle.title}>Ingeniería en Computación</h1>
-        
+        <div className={carrerasStyle.divContainer}>
+          <h1 className={carrerasStyle.title}>Ingeniería en Computación</h1>
+        </div>
         <p className={carrerasStyle.paragraph}>
-        Encontrá acá información sobre la carrera, alcances del título, plan de estudios y las optativas.
+          Encontrá acá información sobre la carrera, alcances del título, plan de estudios y las optativas.
         </p>
 
         <Accordion title="Descripción">
-          <p>
+          <p className={carrerasStyle.paragraph}>
           La carrera de Ingeniería en Computación surgió en el año 2010 y es la primera carrera compartida entre la Facultad de Informática y la Facultad de Ingeniería.
           </p>
         </Accordion>
 
         <Accordion title="Alcance del título">
-        <p>
+        <p className={carrerasStyle.paragraph}>
             1- Relevar y analizar los procesos de una Organización, con la finalidad de especificar el equipamiento electrónico (de control, procesamiento de datos y comunicaciones) que requiera y los sistemas de software que hagan a su funcionamiento.<br /><br />
             
             2- Entender, planificar, dirigir y/o controlar la instalación y mantenimiento de sistemas electrónicos de procesamiento de datos/señales que requieran control por software.<br /><br />
