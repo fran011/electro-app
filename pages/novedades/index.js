@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Head from "next/head";
 import Navbar from "../../components/NavBar";
 import NewsPosts from "../../components/NewsPosts"; 
-import styles from "../styles/novedades.module.css"; 
+import styles from "../../styles/novedades.module.css"; 
 
 const Novedades = () => {
   const [newsItems, setNewsItems] = useState([]);

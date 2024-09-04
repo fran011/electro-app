@@ -17,8 +17,9 @@ export default function IngenieriaElectronica() {
         <title>Ingeniería en Electrónica - UNLP</title>
         <link rel="icon" href="/cropped-logo-tp.png" />
       </Head>
-
-      <img src="/banner-hd.png" className={headerStyle.header} alt="Banner de Ingeniería en Electrónica" />
+      <a href="/">
+        <img src="/banner-hd.png" className={headerStyle.header} alt="Banner de Ingeniería en Electrónica" />
+      </a>
       <Navbar />
 
       <main className={carrerasStyle.mainContent}>

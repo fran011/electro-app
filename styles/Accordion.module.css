@@ -1,33 +1,32 @@
 .button {
-    width: 1200px; /* Define el ancho fijo para el botón */
-    background-color: #1e70aec2; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
+    width: 1200px; 
+    background-color: #1e70aec2; 
+    color: white; 
+    padding: 10px; 
     margin: 5px;
-    border: none; /* Sin borde */
-    text-align: left; /* Alineación del texto a la izquierda */
-    outline: none; /* Sin borde al hacer clic */
-    font-size: 16px; /* Tamaño de la fuente */
+    border: none; 
+    text-align: left; 
+    outline: none; 
+    font-size: 16px; 
   }
   
   .button:focus {
-    outline: none; /* Sin borde al enfocarse */
+    outline: none; 
   }
   
   .button:hover {
-    background-color: #1e70ae71; /* Cambio de color al pasar el ratón */
+    background-color: #1e70ae71; 
   }
 
   @media (max-width: 768px) {
     .button {
-        width: 300px; /* Define el ancho fijo para el botón */
-        background-color: #1e70aec2; /* Color de fondo del botón */
-        color: white; /* Color del texto */
-        padding: 10px; /* Espaciado interno */
+        width: 300px; 
+        color: white; 
+        padding: 10px; 
         margin: 5px;
-        border: none; /* Sin borde */
-        text-align: left; /* Alineación del texto a la izquierda */
-        outline: none; /* Sin borde al hacer clic */
-        font-size: 16px; /* Tamaño de la fuente */
+        border: none; 
+        text-align: left; 
+        outline: none; 
+        font-size: 16px; 
       }
 }    

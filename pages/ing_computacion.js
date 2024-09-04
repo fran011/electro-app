@@ -18,8 +18,9 @@ export default function IngenieriaComputacion() {
         <title>Ingeniería en Computación - UNLP</title>
         <link rel="icon" href="/cropped-logo-tp.png" />
       </Head>
-
-      <img src="/banner-hd.png" className={headerStyle.header} alt="Banner de Ingeniería en Computación" />
+      <a href="/">
+        <img src="/banner-hd.png" className={headerStyle.header} alt="Banner de Ingeniería en Computación" />
+      </a>
       <Navbar />
 
       <main className={carrerasStyle.mainContent}>
@@ -38,21 +39,21 @@ export default function IngenieriaComputacion() {
 
         <Accordion title="Alcance del título">
         <p className={carrerasStyle.paragraph}>
-            1- Relevar y analizar los procesos de una Organización, con la finalidad de especificar el equipamiento electrónico (de control, procesamiento de datos y comunicaciones) que requiera y los sistemas de software que hagan a su funcionamiento.<br /><br />
+            1- Relevar y analizar los procesos de una Organización, con la finalidad de especificar el equipamiento electrónico (de control, procesamiento de datos y comunicaciones) que requiera y los sistemas de software que hagan a su funcionamiento.<br />
             
-            2- Entender, planificar, dirigir y/o controlar la instalación y mantenimiento de sistemas electrónicos de procesamiento de datos/señales que requieran control por software.<br /><br />
+            2- Entender, planificar, dirigir y/o controlar la instalación y mantenimiento de sistemas electrónicos de procesamiento de datos/señales que requieran control por software.<br />
             
-            3- Entender, planificar y/o participar de los estudios técnicos-económicos de factibilidad y/o referentes a la configuración y dimensionamiento de sistemas electrónicos (de control, procesamiento de datos y comunicaciones) y su software asociado.<br /><br />
+            3- Entender, planificar y/o participar de los estudios técnicos-económicos de factibilidad y/o referentes a la configuración y dimensionamiento de sistemas electrónicos (de control, procesamiento de datos y comunicaciones) y su software asociado.<br />
             
-            4- Supervisar la implantación de sistemas que integren hardware y software así como organizar y capacitar al personal afectado por dichos sistemas.<br /><br />
+            4- Supervisar la implantación de sistemas que integren hardware y software así como organizar y capacitar al personal afectado por dichos sistemas.<br />
             
-            5- Desarrollar y aplicar técnicas de seguridad en lo referente al acceso y disponibilidad de la información, como así también, los respaldos de seguridad de todos los recursos, como así también de la información procesada por los mismos.<br /><br />
+            5- Desarrollar y aplicar técnicas de seguridad en lo referente al acceso y disponibilidad de la información, como así también, los respaldos de seguridad de todos los recursos, como así también de la información procesada por los mismos.<br />
             
-            6- Determinar, regular y administrar las pautas operativas y reglas de control que hacen al funcionamiento de las áreas informáticas de las empresas y organizaciones. También diseñar y confeccionar los manuales de procesos y los formularios requeridos para el procesamiento de la Información.<br /><br />
+            6- Determinar, regular y administrar las pautas operativas y reglas de control que hacen al funcionamiento de las áreas informáticas de las empresas y organizaciones. También diseñar y confeccionar los manuales de procesos y los formularios requeridos para el procesamiento de la Información.<br />
             
-            7- Efectuar tareas de auditoría, arbitrajes, pericias y tasaciones relacionados con el equipamiento electrónico y los sistemas de software que hagan a su funcionamiento.<br /><br />
+            7- Efectuar tareas de auditoría, arbitrajes, pericias y tasaciones relacionados con el equipamiento electrónico y los sistemas de software que hagan a su funcionamiento.<br />
             
-            8- Realizar tareas como docente universitario en Electrónica / Informática.<br /><br />
+            8- Realizar tareas como docente universitario en Electrónica / Informática.<br />
             
             9- Realizar tareas de Investigación y Desarrollo en temas que vinculen la Electrónica con la Informática, en particular en las áreas de Sistemas Industriales, Procesamiento de Señales y Sistemas Distribuidos.
         </p>
