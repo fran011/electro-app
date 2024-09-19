@@ -1,8 +1,9 @@
 import React from "react";
 import styles from '../styles/Footer.module.css';
+import URLS from '../data/URLS.json'
 
 const Footer = () => {
-  const googleMap = "https://www.google.com/maps/place/C.+116+%26+C.+48,+La+Plata,+Provincia+de+Buenos+Aires/@-34.906518,-57.9429327,17z/data=!3m1!4b1!4m6!3m5!1s0x95a2e640991092db:0xafc4f7db684c19eb!8m2!3d-34.906518!4d-57.9429327!16s%2Fg%2F11gdtk97sj?entry=ttu";
+  const googleMap = URLS.google.google_map;
     return (
         <footer className={styles.footer}>
           <div className={styles.topContent}>   

@@ -4,6 +4,7 @@ import Navbar from "../components/NavBar";
 import NewsPosts from "../components/NewsPosts"; 
 import styles from "../styles/novedades.module.css"; 
 import headerStyle from "../styles/Header.module.css"
+import URLS from "../data/URLS.json"
 
 const Concursos = () => {
   const [newsItems, setNewsItems] = useState([]);
@@ -19,7 +20,7 @@ const Concursos = () => {
         </a>
         <Navbar />
       <main className={styles.gridContainer}>
-        <NewsPosts setNewsItems={setNewsItems} url={'https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=41'} /> {/* Use NewsPosts to fetch and set news items */}
+        <NewsPosts setNewsItems={setNewsItems} url={URLS.wordpress.concursos} /> {/* Use NewsPosts to fetch and set news items */}
         {newsItems.map((item) => (
           <div key={item.id} className={styles.gridItem}>
             <h3 dangerouslySetInnerHTML={{ __html: item.title }}></h3>

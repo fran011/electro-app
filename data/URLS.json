@@ -1,0 +1,38 @@
+{
+    "google": {
+        "google_map": "https://www.google.com/maps/place/C.+116+%26+C.+48,+La+Plata,+Provincia+de+Buenos+Aires/@-34.906518,-57.9429327,17z/data=!3m1!4b1!4m6!3m5!1s0x95a2e640991092db:0xafc4f7db684c19eb!8m2!3d-34.906518!4d-57.9429327!16s%2Fg%2F11gdtk97sj?entry=ttu"
+    },
+    "redirect": {
+        "iitree": "https://www.iitree-unlp.org.ar/",
+        "leici": "https://leici.ing.unlp.edu.ar/",
+        "leme": "https://leme.ing.unlp.edu.ar/",
+        "senyt": "https://senyt.ing.unlp.edu.ar/",
+        "gridcomd": "https://gridcomd.ing.unlp.edu.ar/",
+        "unitec": "https://labs.ing.unlp.edu.ar/electrotecnia/unitec/"
+    },
+    "images": {
+        "computacion": "https://electro.ing.unlp.edu.ar/wp-content/uploads/2017/11/Link-a-Computacion.png",
+        "electronica": "https://electro.ing.unlp.edu.ar/wp-content/uploads/2017/04/Link-a-Electronica.png",
+        "telecomunicaciones": "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/ingeniero-de-telecomunicaciones (1).jpg",
+        "electricista": "https://electro.ing.unlp.edu.ar/wp-content/uploads/2017/04/Link-a-Electricista.png",
+        "SlideShows": [
+            "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-13.19.40-1-e1699633761233.jpeg",
+            "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-13.19.44-1-e1699633487340.jpeg",
+            "https://electro.ing.unlp.edu.ar/wp-content/uploads/2017/01/ingreso_17_2_medium.jpg",
+            "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-13.19.40-e1699633792844.jpeg",
+            "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-13.19.42-1-e1699633656467.jpeg",
+            "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/imagen_carrusel_11.png",
+            "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-13.19.44-e1699633573922.jpeg",
+            "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-13.19.42-e1699633695960.jpeg"
+        ]
+    },
+    "wordpress": {
+        "last_news": "https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=14",
+        "clubes": {
+            "categoria63": "https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=63",
+            "categoria66": "https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=66",
+            "categoria67": "https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=67"
+        },
+        "concursos": "https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=41"
+    }
+}

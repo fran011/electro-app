@@ -2,13 +2,14 @@
 import React from "react";
 import Link from "next/link";
 import styles from "../styles/SeccionCarreras.module.css";
+import URLS from "../data/URLS.json"
 
 const SeccionCarreras = () => {
     const images = [
-        { src: "https://electro.ing.unlp.edu.ar/wp-content/uploads/2017/11/Link-a-Computacion.png", text: "Ingeniería en Computación", link: "/ing_computacion" },
-        { src: "https://electro.ing.unlp.edu.ar/wp-content/uploads/2017/04/Link-a-Electronica.png", text: "Ingeniería Electrónica", link: "/ing_electronica" },
-        { src: "https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/ingeniero-de-telecomunicaciones (1).jpg", text: "Ingeniería en Telecomunicaciones", link: "/ing_telecomunicaciones" },
-        { src: "https://electro.ing.unlp.edu.ar/wp-content/uploads/2017/04/Link-a-Electricista.png", text: "Ingeniería en Energía Eléctrica", link: "/ing_energiaelectrica" },
+        { src: URLS.images.computacion, text: "Ingeniería en Computación", link: "/ing_computacion" },
+        { src: URLS.images.electronica, text: "Ingeniería Electrónica", link: "/ing_electronica" },
+        { src: URLS.images.telecomunicaciones, text: "Ingeniería en Telecomunicaciones", link: "/ing_telecomunicaciones" },
+        { src: URLS.images.electricista, text: "Ingeniería en Energía Eléctrica", link: "/ing_energiaelectrica" },
     ];
 
     return (

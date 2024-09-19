@@ -2,15 +2,16 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/MainTable.module.css'; // Importa los estilos
+import URLS from "../data/URLS.json"
 
 const MainTable = () => {
     const tableData = [
-        { column2: 'IITREE', url: 'https://www.iitree-unlp.org.ar/' },
-        { column2: 'LEICI', url: 'https://leici.ing.unlp.edu.ar/'},
-        { column2: 'LEME', url: 'https://leme.ing.unlp.edu.ar/' },
-        { column2: 'SENYT', url: 'https://senyt.ing.unlp.edu.ar/' },
-        { column2: 'GRIDCOMD', url: 'https://gridcomd.ing.unlp.edu.ar/' },
-        { column2: 'UNITEC', url: 'https://labs.ing.unlp.edu.ar/electrotecnia/unitec/' },
+        { column2: 'IITREE', url: URLS.iitree },
+        { column2: 'LEICI', url: URLS.leici },
+        { column2: 'LEME', url: URLS.leme },
+        { column2: 'SENYT', url: URLS.senyt },
+        { column2: 'GRIDCOMD', url: URLS.gridcomd },
+        { column2: 'UNITEC', url: URLS.unitec },
         // Agrega más filas según sea necesario
     ];
 
