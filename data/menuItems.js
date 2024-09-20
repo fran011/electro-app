@@ -30,8 +30,8 @@ export const institucinalItems = [
   ]
 
   export   const carrerasItems = [
-    { label: 'Postgrado', url:'#'},
-    { label: 'Grado', url: '#', 
+    { label: 'Postgrado', url:'/postgrado'},
+    { label: 'Grado', url: '', 
       subItems: [
         { label: 'Ingenieria en Computacion', url:'/ing_computacion'},
         { label: 'Ingenieria en Electronica', url:'/ing_electronica' },
@@ -57,7 +57,7 @@ export const institucinalItems = [
 
   export const barcalaItems = [
     { label: 'Laboratorio Barcala', url: '#'},
-    { label: 'Horarios', url:'#'},
+    { label: 'Horarios', url:'horarios'},
   ]
 
   export const clubesItems = [
