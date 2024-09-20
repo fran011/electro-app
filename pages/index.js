@@ -7,6 +7,7 @@ import Slider from "../components/SlideShow";
 import MainTable from "../components/mainTable";
 import SeccionCarreras from "../components/SeccionCarreras";
 import SeccionClubes from "../components/SeccionClubes";
+import URLS from "../data/URLS.json"
 //import styles from "../styles/Home.module.css";
 
 export default function Index() {
@@ -19,7 +20,7 @@ export default function Index() {
       <img src="/banner-hd.png" className={headerStyle.header}/>
         <Navbar />
         <main>
-        <Slider/>
+        <Slider images={URLS.images.SlideShows}/>
         <MainTable/>
         <LastNews />
         <SeccionCarreras/>
