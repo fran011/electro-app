@@ -16,20 +16,20 @@ const SeccionClubes = () => {
       try {
         const [response63, response66, response67] = await Promise.all([
           fetch(URLS.wordpress.clubes.categoria63),
-          fetch('https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=66'),
-          fetch('https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=67')
+          fetch(URLS.wordpress.clubes.categoria66),
+          fetch(URLS.wordpress.clubes.categoria67)
         ]);
 
         const data63 = await response63.json();
         const newsTitles63 = data63.map(post => post.title.rendered);
         setTitlesCategory63(newsTitles63);
 
-        const response66 = await fetch(URLS.wordpress.clubes.categoria66);
+        // const response66 = await fetch(URLS.wordpress.clubes.categoria66);
         const data66 = await response66.json();
         const newsTitles66 = data66.map(post => post.title.rendered);
         setTitlesCategory66(newsTitles66);
 
-        const response67 = await fetch(URLS.wordpress.clubes.categoria67);
+        // const response67 = await fetch(URLS.wordpress.clubes.categoria67);
         const data67 = await response67.json();
 
         setTitlesCategory63(data63.map(post => post.title.rendered));

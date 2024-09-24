@@ -6,7 +6,7 @@ import URLS from "../data/URLS.json"
 
 const Slider = ({images}) => {
     //const images = URLS.images.SlideShows
-    console.log("Images in Slider: ", images);
+    // console.log("Images in Slider: ", images);
     return (
         <div className={styles.slideContainer}>
             <Slide>
