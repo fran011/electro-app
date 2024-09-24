@@ -8,7 +8,6 @@ import MainTable from "../components/mainTable";
 import SeccionCarreras from "../components/SeccionCarreras";
 import SeccionClubes from "../components/SeccionClubes";
 import URLS from "../data/URLS.json"
-//import styles from "../styles/Home.module.css";
 
 export default function Index() {
   return (
