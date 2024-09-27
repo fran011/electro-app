@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 const NewsPosts = ({ setNewsItems, url }) => {
+  
   useEffect(() => {
     fetch(url)
       .then(response => response.json())

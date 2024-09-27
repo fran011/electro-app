@@ -14,12 +14,7 @@ const SeccionClubes = () => {
   useEffect(() => {
     const fetchTitles = async () => {
       try {
-        const [response63, response66, response67] = await Promise.all([
-          fetch(URLS.wordpress.clubes.categoria63),
-          fetch('https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=66'),
-          fetch('https://electro.ing.unlp.edu.ar/wp-json/wp/v2/posts?categories=67')
-        ]);
-
+        const response63 = await fetch(URLS.wordpress.clubes.categoria63);
         const data63 = await response63.json();
         const newsTitles63 = data63.map(post => post.title.rendered);
         setTitlesCategory63(newsTitles63);
@@ -31,12 +26,8 @@ const SeccionClubes = () => {
 
         const response67 = await fetch(URLS.wordpress.clubes.categoria67);
         const data67 = await response67.json();
-
-        setTitlesCategory63(data63.map(post => post.title.rendered));
-        setTitlesCategory66(data66.map(post => post.title.rendered));
-        setTitlesCategory67(data67.map(post => post.title.rendered));
-
-        // Desactivar el estado de carga una vez que todo ha sido cargado
+        const newsTitles67 = data67.map(post => post.title.rendered);
+        setTitlesCategory67(newsTitles67);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching the news titles:', error);
