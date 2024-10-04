@@ -24,6 +24,18 @@ const Post_DevOps = () => {
         <img src="/banner-hd.png" className={headerStyle.header} alt="Banner de Ingeniería en Computación" />
       </a>
       <Navbar />
+      <a href="https://clubdevops.ar/about/">
+        <div className={styles.imageContainer} >
+          <img className={styles.image2} src="https://clubdevops.ar/logo-resumido-resize.jpeg" alt="Imagen club"/>
+          <img className={styles.image} src="https://clubdevops.ar/logo-resize.jpeg" alt="Imagen club 2"/>
+        </div>
+      </a>
+      <div className={styles.pContainer}>
+        <h2 className={styles.title}> ¿Qué es el club? </h2>
+        <p> En Marzo de 2023 se fundó oficialmente el Club de Ciencia y Tecnología “DevOps” el cual funciona dentro del Departamento de Electrotecnia
+            y Electrónica de la Facultad de Ingeniería de la UNLP, 
+            con la intención de darle más fuerza al área de informática dentro de la Facultad de Ingeniería. </p>
+      </div>
       <PostList categoriaUrl={URLS.wordpress.clubes.categoria66}/>
       <Footer />
     </div>

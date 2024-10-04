@@ -61,6 +61,6 @@ export const institucinalItems = [
   ]
 
   export const clubesItems = [
-    { label: 'Club DevOps', url: '#'},
-    { label: 'Club de Robotica', url:'#'},
+    { label: 'Club DevOps', url: 'post_devops'},
+    { label: 'Club de Robotica', url:'post_robotica'},
   ]

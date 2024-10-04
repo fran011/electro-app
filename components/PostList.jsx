@@ -63,7 +63,7 @@ const PostList = ({ categoriaUrl }) => {
 
   return (
     <div>
-      <h1>Lista de Posts</h1>
+      <h1 className={styles.title}>Lista de Posts</h1>
       <div className={styles.divContainer}>
         {posts.map((post) => (
           <div className={styles.divItem} key={post.id}>
