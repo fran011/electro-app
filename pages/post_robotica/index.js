@@ -24,6 +24,18 @@ const Post_Robotica = () => {
         <img src="/banner-hd.png" className={headerStyle.header} alt="Banner de Ingeniería en Computación" />
       </a>
       <Navbar />
+      <a href="https://www.instagram.com/cdrfiunlp/?hl=es">
+        <div className={styles.imageContainer} >
+          <img className={styles.imageRobotica} src="https://electro.ing.unlp.edu.ar/wp-content/uploads/2023/11/robotica-1.png" alt="Imagen club"/>
+        </div>
+      </a>
+      <div className={styles.pContainer}>
+        <h2 className={styles.title}> ¿Qué es el club? </h2>
+        <p> Es un espacio de estudiantes para estudiantes, orientado a que toda la gente que quiera sumarse pueda desarrollar 
+            sus actividades extracurriculares en la facultad con todo el apoyo y el equipamiento que el club puede brindar. 
+            El objetivo es contar con un espacio para llevar a la práctica todos los 
+            conocimientos que se van aprendiendo a lo largo de la carrera y desarrollar proyectos personales, o incluso trabajos finales. </p>
+      </div>
       <PostList categoriaUrl={URLS.wordpress.clubes.categoria67}/>
       <Footer />
     </div>
