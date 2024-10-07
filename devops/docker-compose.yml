@@ -1,0 +1,49 @@
+services:
+
+  electro-front:
+    #image: <electro-front-image>
+    build:
+      context: ../
+      dockerfile: devops/Dockerfile
+      target: runner
+    restart: always
+    ports:
+      - 3000:3000
+    env_file:
+      - ../env.front
+#    volumes:
+#      - frontend:/app
+    networks:
+      - default
+
+  electro-back:
+    image: wordpress
+    restart: always
+    #ports:
+    #- 8080:80
+    env_file:
+      - ../env.back
+    volumes:
+      - backend:/var/www/html
+    networks:
+      - default
+
+  db:
+    image: mysql
+    restart: always
+    env_file:
+      - ../env.db
+    volumes:
+      - db:/var/lib/mysql
+    networks:
+      - default
+      - mysql
+
+volumes:
+  frontend:
+  backend:
+  db:
+
+networks:
+  mysql:
+    external: true
